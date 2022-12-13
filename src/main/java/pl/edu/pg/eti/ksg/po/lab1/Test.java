@@ -1,4 +1,5 @@
 package pl.edu.pg.eti.ksg.po.lab1;
+
 public class Test {
 
     public static void atest()
@@ -49,5 +50,31 @@ public class Test {
         System.out.println(b.hashCode());
         System.out.println("Metoda hashCode: b1.hashCode()");
         System.out.println(b1.hashCode());
+    }
+
+
+    public static void pkttest()
+    {
+        Punkt p = new Punkt(2.5);
+        System.out.println("Pobieranie liczby:");
+        System.out.println(p.getLiczba());
+        System.out.println("Drukowanie całego obiektu:");
+        System.out.println(p);
+        p.setLiczba(3.14);
+        System.out.println("Drukowanie całego obiektu po ustawieniu liczby:");
+        System.out.println(p);
+        Punkt p1 = new Punkt(3.14);
+        System.out.println("Porównywanie referencji: b == b");
+        System.out.println(p == p);
+        System.out.println("Porównywanie referencji: b == b1");
+        System.out.println(p == p1);
+        System.out.println("Metoda equals: b.equals(b)");
+        System.out.println(p.equals(p));
+        System.out.println("Metoda equals: b.equals(b1)");
+        System.out.println(p.equals(p1));
+        System.out.println("Metoda hashCode: b.hashCode()");
+        System.out.println(p.hashCode());
+        System.out.println("Metoda hashCode: b1.hashCode()");
+        System.out.println(p1.hashCode());
     }
 }

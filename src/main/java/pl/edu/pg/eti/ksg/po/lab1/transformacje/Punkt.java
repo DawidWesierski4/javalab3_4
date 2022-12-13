@@ -31,12 +31,10 @@ public class Punkt {
             return false;
         }
     }
-    // @Override
-    // public int hashCode() {
-    // /*
-    // * TODO
-    // */
-    // }
+    @Override
+    public int hashCode() {
+        return (((int)this.y * 11) / ((int)this.x + 7)) * 51 + 91;
+    }
     // @Override
     // public String toString() {
     // /*
