@@ -1,4 +1,4 @@
-package pl.edu.pg.eti.ksg.po.lab1.transformacje;
+package pl.edu.pg.eti.ksg.po.lab1;
 
 public class Punkt {
     /*

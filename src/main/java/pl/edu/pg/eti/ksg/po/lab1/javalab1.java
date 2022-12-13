@@ -11,6 +11,5 @@ public class javalab1
         System.out.println( "Hello World!" );
         Test.atest();
         // Test.btest();
-        Test.pkttest();
     }
 }
