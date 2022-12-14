@@ -1,6 +1,10 @@
 package pl.edu.pg.eti.ksg.po.lab1;
 
 import pl.edu.pg.eti.ksg.po.lab1.transformacje.Punkt;
+import pl.edu.pg.eti.ksg.po.lab1.transformacje.Translacja;
+import pl.edu.pg.eti.ksg.po.lab1.transformacje.Skalowanie;
+import pl.edu.pg.eti.ksg.po.lab1.transformacje.BrakTransformacjiOdwrotnejException;
+import pl.edu.pg.eti.ksg.po.lab1.transformacje.Transformacja;
 
 public class Test {
 
