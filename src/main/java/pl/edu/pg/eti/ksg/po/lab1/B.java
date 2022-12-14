@@ -23,6 +23,7 @@ public class B {
     }
         return false;
     }
+
     @Override
     public int hashCode() {
     return 59 * Double.hashCode(liczba) + 7;
