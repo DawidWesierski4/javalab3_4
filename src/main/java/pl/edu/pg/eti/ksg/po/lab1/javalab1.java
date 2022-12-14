@@ -11,6 +11,7 @@ public class javalab1
         //Test.atest();
         //Test.btest();
         //Test.pkttest();
-        Test.testTranslacjaAndSkalowanie();
+        //Test.testTranslacjaAndSkalowanie();
+        Test.testObrot();
     }
 }
