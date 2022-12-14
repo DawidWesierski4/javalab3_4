@@ -9,7 +9,8 @@ public class javalab1
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        Test.atest();
-        Test.btest();
+        //Test.atest();
+        //Test.btest();
+        Test.pkttest();
     }
 }
