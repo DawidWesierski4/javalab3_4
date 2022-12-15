@@ -6,6 +6,7 @@ import pl.edu.pg.eti.ksg.po.lab1.transformacje.Skalowanie;
 import pl.edu.pg.eti.ksg.po.lab1.transformacje.Obrot;
 import pl.edu.pg.eti.ksg.po.lab1.transformacje.BrakTransformacjiOdwrotnejException;
 import pl.edu.pg.eti.ksg.po.lab1.transformacje.Transformacja;
+import pl.edu.pg.eti.ksg.po.lab1.transformacje.ZlozenieTranformacji;
 
 public class Test {
 
@@ -160,6 +161,34 @@ public class Test {
         try {
             Punkt p1 = new Punkt(2, 2);
             Transformacja tr2 = new Obrot(5);
+            System.out.println(tr2);
+            System.out.println(p1);
+            Punkt p2 = tr2.transformuj(p1);
+            System.out.println(p2);
+            Transformacja trr2 = tr2.getTransformacjaOdwrotna();
+            System.out.println(trr2);
+            Punkt p3 = trr2.transformuj(p2);
+            System.out.println(p3);
+        } catch(BrakTransformacjiOdwrotnejException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static void testZlozenieTranformacji()
+    {
+        try {
+            Punkt p1 = new Punkt(2, 2);
+            Transformacja[] tab = {
+                new Obrot(10),
+                new Obrot(20),
+                new Obrot(30),
+                new Obrot(40)
+                
+            };
+
+
+
+            Transformacja tr2 = new ZlozenieTranformacji(tab);
             System.out.println(tr2);
             System.out.println(p1);
             Punkt p2 = tr2.transformuj(p1);
